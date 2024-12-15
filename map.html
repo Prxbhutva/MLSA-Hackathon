@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        #map{
+            width: 100%;
+            height: 100%;
+
+        }
+        footer{
+            background-color: red;
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+            color: white;
+        }
+
+        @keyframes bouncing{
+    0%{
+        bottom: 0%;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    100%{
+        bottom: 50px;
+        box-shadow: 0 50px 50px red ;
+    }
+}
+    </style>
+</head>
+<body>
+    <img src="./images/download.jpg" alt="map" id="map">
+    <footer>
+        <p>The information in the map varies from instance to instace. Please stay alert!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.outer-box{
+    background-color: black;
+    width: 100vw;
+    height: 100vh ;
+    background-image: url(./videos/gif.gif);
+    background-repeat: repeat;
+}
+
+/* @font-face{
+    font-family: lethalcompany;
+    src: url(https://3270font.s3.amazonaws.com/3270_fonts_d916271.zip);
+} */
+body{
+    font-family: monospace;
+    background-image: url(./videos/gif.gif);
+    background-repeat: repeat;
+}
+
+
+.inner-box{
+    /* display:grid; */
+    width: 400px;
+    margin:0 auto;
+    position: relative;
+    /* background: linear-gradient(to top left,#ffffffff,#ffffff33); */
+    background-color: #0d0d0e;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px ;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #0fd149;
+
+}
+
+h1{
+    font-size: 2.5rem;
+    color: rgb(57, 233, 41);
+    text-align: center;
+}
+
+.signup-body{
+    color: rgb(57, 233, 41);
+}
+
+#submit{
+    color: black
+    
+}
+
+#submit:hover{
+    cursor: pointer;
+}

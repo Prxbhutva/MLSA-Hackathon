@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#broadcast">Broadcast</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#safezones">Safe Zones</a></li>
+                <li><a href="#reports">Incident Reports</a></li>
+                <li><a href="#setting">Settings</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="overview" class="card">
+                <h3>System Overview</h3>
+                <p>Active Users: 1,234</p>
+                <p>Broadcasts Sent: 56</p>
+                <p>Safe Zones Online: 12</p>
+            </section>
+
+            <section id="broadcast" class="card">
+                <h3>Broadcast</h3>
+                <textarea placeholder="Write your emergency message here" rows="5"></textarea>
+                <br>
+                <button class="button">Send broadcast</button>
+            </section>
+            <section id="locations" class="card">
+                <h3>Safe Zones</h3>
+                <button class="button">Add Safe Zone</button>
+                <a href="http://127.0.0.1:5500/map.html" target="_blank">
+                <button class="button">View Map</button>
+            </a>
+            </section>
+            <section id="reports" class="card">
+                <h3>Incident Reports</h3>
+                <p>New Reports: 23</p>
+                <a href="http://127.0.0.1:5500/reports.html" target="_blank">
+                <button class="button">View Reports</button>
+            </a>
+            </section>
+            <section id="settings" class="card">
+                <h3>Settings</h3>
+                <button class="button">System Settings</button>
+                <button class="button critical">Shutdown System</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
